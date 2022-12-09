@@ -1,13 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1>ADyBaH</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>CV Andrew N.</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style/reset.css" >
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  </head>
+
+  <body class="thisbody">
+    
+    <div class="contaner">
+      <header>
+        <nav>
+          <ul class="navlist">
+            <li>
+              <div>
+                <a class="titleformain urlhover" href="#codeex">Code example</a>
+              </div>
+            </li>
+            <li>
+              <h1 class="about-me-titel">Andrew N.</h1>
+            </li>
+            <li>
+              <div>
+                <a class="titleformain urlhover" href="#courses">Education</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <section class="atrtcle__section">
+            <div class="aboutme">
+              <img class="aboutme__img" src="assets/img/IMG_20200315_210242.jpg" alt="myphoto" >
+              <div class="contacts">
+                <h2 class="about-me-titel">Contacts</h2>
+                <ul>
+                  <li>
+                    <span class="icon"
+                      ><i class="fa fa-envelope-square" aria-hidden="true"></i
+                    ></span>
+                    <span class="social">E_mail:</span>
+                    <span class="text"> adybahchuk@gmail.com</span>
+                  </li>
+                  <li>
+                    <span class="icon"
+                      ><i class="fa fa-map-marker" aria-hidden="true"></i
+                    ></span>
+                    <span class="social">Location:</span>
+                    <span class="text">Russia, Nizhny Novgorod</span>
+                  </li>
+                  <li>
+                    <span class="icon"
+                      ><i class="fa fa-telegram" aria-hidden="true"></i
+                    ></span>
+                    <span class="social">Telegram:</span>
+                    <span class="text">@ADyBaH4uK</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <h3 class="title">Information about yourself</h3>
+          <section class="goal atrtcle__section">
+            <h2 class="titleformain">My goal: Junior Front-end developer.</h2>
+            <div class="text">To achieve my goal, I try to study every day.</div>
+          </section>
+          <h3 class="title">skills</h3>
+          <section class="myskill atrtcle__section">
+            <div class="boxforskill">
+              <h3 class="text">Python</h3>
+              <div class="percent">
+                <div style="width: 20%;"></div>
+              </div>
+            </div>
+            <div class="boxforskill">
+              <h3 class="text">HTML</h3>
+              <div class="percent">
+                <div style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="boxforskill">
+              <h3 class="text">CSS</h3>
+              <div class="percent">
+                <div style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="boxforskill">
+              <h3 class="text">JavaScript</h3>
+              <div class="percent">
+                <div style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="softskill">
+              <!-- <br> -->
+              <h3 class="titleformain">Softskills</h3>
+              <ul class="text">
+                <li>Selfeducation.</li>
+                <li>I know how to use google.</li>
+                <li>Lots of free time.</li>
+                <li>Perseverance.</li>
+              </ul>
+            </div>
+            <div class="language">
+              <!-- <br> -->
+              <h3 class="titleformain">language</h3>
+              <ul class="text">
+                <li>Russia: native.</li>
+                <li>English: A1.</li>
+              </ul>
+            </div>
+          </section>
+          <h3 class="title">code example</h3>
+      <section class="atrtcle__section" id="codeex">
+        <div>
+          <h3 class="text">
+            <span class="titleformain">Task: </span> Sum all the numbers of a
+            array, except the highest and the lowest element.
+          </h3>
+          <pre class="text">
+<em class="colorblue">function</em> <span class="colorgreen">sumArray</span>(<em class="colororange">array</em>) {
+  <span class="colorblue">let</span> answer <span class="colorred">=</span> <span class="coloropur">0</span>;
+  <span class="colorred">if</span> (<em class="colororange">array</em> <span class="colorred">==</span> <span class="coloropur">null</span>) {
+    <span class="colorred">return</span> answer;
+  } <span class="colorred">else if</span>(<em class="colororange">array</em>.length <span class="colorred">&#60;</span> <span class="coloropur">3</span>) {
+    <span class="colorred">return</span> answer;
+  } <span class="colorred">else</span> {
+    <em class="colororange">array</em>.<span class="colorgreen">sort</span>(<em class="colorblue">function</em>(<em class="colororange">a</em>, <em class="colororange">b</em>){<span class="colorred">return</span> <em class="colororange">a</em><span class="colorred"> - </span><em class="colororange">b</em>});
+    <span class="colorred">for</span> (<em class="colorblue">let</em> i <span class="colorred">=</span> <span class="coloropur">1</span>; i <span class="colorred">&#60;</span> <em class="colororange">array</em>.length <span class="colorred">-</span> <span class="coloropur">1</span>; i<span class="colorred">+</span><span class="colorred">+</span>){
+      answer <span class="colorred">+</span><span class="colorred">=</span> <em class="colororange">array</em>[i];
+    }
+    <span class="colorred">return</span> answer;
+  }
+}
+</pre>
+        </div>
+        </section>
+          <h3 class="title">Education</h3>
+          <section class="atrtcle__section" id="courses">
+            <h3 class="titleformain">
+              Certificates
+            </h3>
+            <a
+                class="text urlhover"
+                href="https://stepik.org/users/459481390"
+                target="_blank"
+                rel="noopener noreferrer"
+                >https://stepik.org/users/459481390</a
+              >
+            <ul class="text">
+              <li>JavaScript for beginners.</li>
+              <li>Generation Python: for beginners.</li>
+              <li>BASICS Html & CSS.</li>
+              <li>Programming on Python</li>
+              <li>Web-technology: First level.</li>
+            </ul>
+            <h3 class="titleformain">Various literature and video lessons.</h3>
+            <ul class="text">
+              <li>
+                I'm reading now
+                <a
+                  class="urlpage urlhover"
+                  href="https://learn.javascript.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://learn.javascript.ru/</a
+                >
+              </li>
+              <li>I'm watching now video about Html & CSS</li>
+            </ul>
+          </section>
+        </article>
+      </main>
+      <footer class="myfooter">
+        <ul class="myfooter__ul">
+          <li>
+            <div class="titlefooter">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <a
+                class="titlefooter urlhover"
+                href="https://github.com/ADyBaH"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MyGithub</a
+              >
+            </div>
+          </li>
+          <li><p class="titlefooter">© By Andrey 2022</p></li>
+          <li>
+            <a
+              href="https://rs.school/js/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="footer_img" src="assets/img/rs_school_js.svg" alt="rs_school_js">
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
