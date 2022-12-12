@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+.dark-theme {
+  --bg-color: #17171a;
+  --titel-color: #f5f8ff;
+  --bg-articl-color: #1f2025;
+  --bg-shadow-articl-color: rgba(190, 184, 184, 0.411);
+  --text-color: rgb(190, 184, 184);
+  --skill-bar-color-percent: #506363;
+  --skill-bar-color: #fff;
+  --meth: hsl(122deg 100% 50%);
+  --func: rgb(32, 163, 203);
+  --red: rgb(255, 82, 82);
+  --orang: rgb(255, 196, 0);
+  --pur: rgb(198, 106, 255);
+}
+.light-theme {
+  --bg-color: #ccc;
+  --titel-color: rgb(55, 55, 55);
+  --bg-articl-color: #feffff;
+  --bg-shadow-articl-color: rgba(96, 91, 91, 0.411);
+  --text-color: rgb(55, 55, 55);
+  --skill-bar-color-percent: #6e7d7d;
+  --skill-bar-color: rgb(55, 55, 55);
+  --meth: hsl(122deg 78% 28%);
+  --func: hsl(194deg 100% 32%);
+  --orang: hsl(46deg 78% 31%);
+  --red: hsl(0deg 100% 44%);
+  --pur: hsl(277deg 100% 50%);
+}
+
+.style-button {
+  color: var(--text-color);
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.style-button:hover {
+  transition: 0.3s;
+  color: rgb(117, 118, 108);
+}
+.fa-sun-o:before {
+  font-size: 20px;
+}
+.fa-moon-o:before {
+  font-size: 20px;
+}
+.contaner {
+  max-width: 800px;
+  width: 100%;
+}
+.urlpage {
+  font-weight: 200;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  color: var(--text-color);
+}
+.thisbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 48px 64px;
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  transition: 0.1s;
+}
+.contacts {
+  padding: 5px;
+}
+
+.urlhover:hover {
+  transition: 0.3s;
+  color: rgb(117, 118, 108);
+}
+.navlist {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 32px;
+}
+.icon {
+  width: 20px;
+  display: inline-block;
+  color: var(--text-color);
+  transition: 0.1s;
+}
+.aboutme__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--text-color);
+  transition: 0.1s;
+  box-shadow: 5px 5px 5px var(--bg-color);
+}
+.about-me-titel {
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: var(--titel-color);
+  transition: 0.1s;
+}
+.social {
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  color: var(--text-color);
+  transition: 0.1s;
+}
+
+.title {
+  margin: 40px 0px 16px 0px;
+  font-weight: 800;
+  font-size: 1.3em;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding: 0px 0px 0px 24px;
+  color: var(--titel-color);
+  transition: 0.1s;
+}
+
+.atrtcle__section {
+  width: 100%;
+  min-width: 100px;
+  max-width: 800px;
+  padding: 24px;
+  background-color: var(--bg-articl-color);
+  transition: 0.1s;
+  border-radius: 24px;
+  box-shadow: 3px 3px 3px var(--bg-shadow-articl-color);
+}
+.titleformain {
+  margin: 0px 0px 20px 0px;
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  color: var(--titel-color);
+  transition: 0.1s;
+}
+.text {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  /* opacity: 0.84; */
+  line-height: 30px;
+  color: var(--text-color);
+  transition: 0.1s;
+  text-shadow: 2px 2px 2px var(--bg-color);
+}
+.percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: var(--skill-bar-color);
+  transition: 0.1s;
+  border-radius: 10px;
+}
+.percent div {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--skill-bar-color-percent);
+  transition: 0.1s;
+}
+.softskill {
+  margin: 20px 0px 20px 0px;
+}
+.colorblue {
+  color: var(--func);
+}
+.colorred {
+  color: var(--red);
+}
+.colorgreen {
+  color: var(--meth);
+}
+.colororange {
+  color: var(--orang);
+}
+.coloropur {
+  color: var(--pur);
+}
+.myfooter {
+  width: 100%;
+  min-width: 300px;
+  max-width: 800px;
+  padding: 24px 0px 24px;
+}
+.myfooter__ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer_img {
+  width: 100px;
+  height: 40px;
+}
+.titlefooter {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: var(--titel-color);
+  transition: 0.1s;
+}
+
+@media (max-width: 700px) {
+  .text {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 630px) {
+  .atrtcle__section {
+    padding: 20px;
+  }
+  .aboutme {
+    gap: 20px;
+  }
+  .text {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 590px) {
+  .aboutme {
+    gap: 10px;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
+@media (max-width: 550px) {
+  .title {
+    font-size: 1em;
+  }
+  .titlefooter {
+    font-size: 1em;
+  }
+  .titleformain {
+    font-size: 1em;
+  }
+  .aboutme {
+    gap: 10px;
+  }
+  .text {
+    line-height: 20px;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 510px) {
+  .footer_img {
+    width: 80px;
+  }
+  .aboutme__img {
+    width: 80px;
+    height: 80px;
+  }
+  .title {
+    font-size: 0.9em;
+  }
+  .titlefooter {
+    font-size: 0.9em;
+  }
+  .titleformain {
+    font-size: 0.9em;
+  }
+  .aboutme {
+    gap: 10px;
+  }
+  .text {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 490px) {
+  .footer_img {
+    width: 70px;
+  }
+  .aboutme__img {
+    width: 70px;
+    height: 70px;
+  }
+  .about-me-titel {
+    font-size: 1em;
+  }
+  .title {
+    font-size: 0.8em;
+  }
+  .titlefooter {
+    font-size: 0.8em;
+  }
+  .titleformain {
+    font-size: 0.8em;
+  }
+  .aboutme {
+    gap: 10px;
+  }
+  .text {
+    font-size: 0.7em;
+  }
+  .social {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 400px) {
+  .myfooter {
+    min-width: 200px;
+  }
+  .footer_img {
+    width: 60px;
+  }
+  .title {
+    font-size: 0.7em;
+  }
+  .titlefooter {
+    font-size: 0.6em;
+  }
+  .titleformain {
+    font-size: 0.7em;
+  }
+  .aboutme {
+    gap: 10px;
+  }
+  .text {
+    font-size: 0.6em;
+  }
+  .social {
+    font-size: 0.6em;
+  }
+}
